@@ -1,0 +1,21 @@
+{
+  "name": "yt-dlp-gui",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "面向 B 站的批量下载工作台：Fastify 后端 + Vue 3 前端，下载引擎基于本地 yt-dlp",
+  "packageManager": "pnpm@10.12.1",
+  "engines": {
+    "node": ">=20.19"
+  },
+  "scripts": {
+    "dev": "pnpm -r --parallel dev",
+    "build": "pnpm -r build",
+    "start": "node server/dist/index.js",
+    "typecheck": "pnpm -r typecheck",
+    "setup:check": "node scripts/doctor.mjs"
+  },
+  "dependencies": {
+    "@types/node": "^24.19.2"
+  }
+}

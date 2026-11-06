@@ -1,0 +1,34 @@
+# 依赖
+node_modules/
+.pnpm-store/
+
+.dsh-tmp/
+temp/*
+
+# 构建产物
+dist/
+server/dist/
+web/dist/
+
+# 运行时数据（下载文件、任务状态、日志）
+downloads/
+data/
+.cache/
+
+# 本地 vendored 的 yt-dlp 源码 / 可执行文件，不进版本库
+/yt-dlp/
+
+# 本地工具（ffmpeg 等二进制）
+/tools/
+
+# 环境变量
+.env
+.env.local
+.env.*.local
+
+# 编辑器与系统文件
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.log
